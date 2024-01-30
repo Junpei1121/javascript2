@@ -1,9 +1,16 @@
 $(function(){
-  $('.box1').slideDown(1000, function (){
+  $('.box1').mouseover(function(){
     $('.box1').css({
-      'background-color': '#0000FF',
-      'height': '100px',
-      'width': '200px'
-     }).slideUp(1000);
+      'background-color': 'blue',
+      'height' : '300px',
+      'width' : '300px'
+    });
+  });
+  $('.box1').mouseout(function(){
+    $('.box1').css({
+      'background-color': 'red',
+      'height' : '200px',
+      'width' : '200px'
+    });
   });
 });
